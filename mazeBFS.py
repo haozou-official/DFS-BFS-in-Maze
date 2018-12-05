@@ -9,10 +9,11 @@ Function:
     Using Queue
 """
 
+from myqueue import Queue
 from graphics import *
 from myarray2d import Array2D
 from maze import Maze
-from mazedraw improt MazeDraw
+from mazedraw import MazeDraw
 
 def BFS(G, V, goal, came_from):
     frontier = Queue()
@@ -50,7 +51,7 @@ def drawPath(win, maze, came_from):
         current = next
         
 def main():
-    win = GraphWin('DFS for Maze', 600, 600, autoflush=False)
+    win = GraphWin('BFS for Maze', 600, 600, autoflush=False)
     maze = Maze(20, 20)
     mazedraw = MazeDraw(win, maze)
     mazedraw.draw()

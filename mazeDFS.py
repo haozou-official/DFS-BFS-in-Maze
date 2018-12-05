@@ -10,7 +10,7 @@ Function:
 from graphics import *
 from myarray2d import Array2D
 from maze import Maze
-from mazedraw improt MazeDraw
+from mazedraw import MazeDraw
 
 def DFS(maze, v, goal, came_from):
     if came_from == {}:

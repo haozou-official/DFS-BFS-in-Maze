@@ -41,7 +41,7 @@ class Array2D:
             self.theRows[row].clear(value)
             
     def __getitem__(self, ndxTuple):
-        seert len(ndxTuple)==2, 'Invalid number of array subscripts.'
+        assert len(ndxTuple)==2, 'Invalid number of array subscripts.'
         row = ndxTuple[0]
         col = ndxTuple[1]
         assert row >= 0 and row < self.numRows() and \

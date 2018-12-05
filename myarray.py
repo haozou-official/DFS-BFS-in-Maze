@@ -8,15 +8,15 @@ Created on Fri Nov 23 19:23:16 2018
 Funtion:
     Array class;
 """
-import randoms
-import ctype
+import random
+import ctypes
 
 class Array:
     def __init__(self, size):
         assert size > 0, 'Array size must be > 0'
         self.size = size
-        PyArrayType = ctype.py_object * size
-        self.elements=PyArrayType()
+        PyArrayType = ctypes.py_object * size
+        self.elements = PyArrayType()
         self.clear(None)
         
     def clone(self):
